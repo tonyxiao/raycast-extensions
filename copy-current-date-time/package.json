@@ -9,16 +9,18 @@
   "commands": [
     {
       "name": "index",
-      "title": "Copy current date and time",
+      "title": "Paste current date and time",
       "description": "",
-      "mode": "view"
+      "mode": "no-view"
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.26.3"
+    "@raycast/api": "^1.26.3",
+    "luxon": "2.2.0"
   },
   "devDependencies": {
     "@types/node": "~16.10.0",
+    "@types/luxon": "2.0.8",
     "@types/react": "^17.0.28",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
