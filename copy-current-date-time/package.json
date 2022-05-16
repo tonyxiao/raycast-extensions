@@ -12,11 +12,19 @@
       "title": "Paste current date and time",
       "description": "",
       "mode": "no-view"
+    },
+    {
+      "name": "clipboardUrlToContent",
+      "title": "Replace clipboard url with content",
+      "description": "Download content of url currently at clipboard. Read result as text and replace clipboard",
+      "mode": "no-view"
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.26.3",
-    "luxon": "2.2.0"
+    "@raycast/api": "1.34.1",
+    "luxon": "2.2.0",
+    "cross-fetch": "2.2.6",
+    "timers": "0.1.1"
   },
   "devDependencies": {
     "@types/node": "~16.10.0",
