@@ -3,14 +3,14 @@ import { DateTime } from "luxon";
 
 export default async function pasteDateTimeToClipboard() {
   // 20210911-1530 is the desired format
-  const dateStr = DateTime.local().toFormat("yyyy-MM-dd HH:mm ");
+  const dateStr = DateTime.local().toFormat("yyyy-MM-dd_HHmm ");
   await pasteText(dateStr);
   await closeMainWindow();
 }
 
 export async function copyDateTimeToClipboard() {
   // Alternative
-  const dateStr = DateTime.local().toFormat("yyyy-MM-dd HH:mm ");
+  const dateStr = DateTime.local().toFormat("yyyy-MM-dd_HHmm ");
   await copyTextToClipboard(dateStr);
   await showHUD(`${dateStr} copied to clipboard`);
 }
